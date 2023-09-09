@@ -1,0 +1,193 @@
+/* TodoList.css */
+
+/* Overall container style */
+.todo-list {
+  font-family: 'Arial', sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: #77f4ee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+
+/* Title style */
+h1 {
+  font-size: 28px;
+  margin: 0;
+  padding: 10px;
+  color:  #0baedc;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/* Input section style */
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+
+/* Text input style */
+input[type="text"] {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #080000;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+}
+
+/* Add button style */
+button {
+  background-color: #d5be73;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* To-Do list style */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* List item style */
+li {
+  background-color: #0baedc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  flex-basis: calc(33.33% - 10px);
+  box-sizing: border-box;
+  color: #090101;
+}
+
+/* Task details style */
+.task-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Task date and day style */
+.task-date {
+  font-weight: bold;
+  color: #080000;
+  margin-top: 5px;
+}
+
+/* Task description style */
+.task-description {
+  margin-top: 5px;
+  color: #080000;
+}
+
+/* Checkbox style */
+.task-checkbox {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Completed tasks style */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Hover effect for tasks */
+li:hover {
+  background-color:  #77f4ee;
+}
+
+/* Delete button style */
+button.delete-button {
+  background-color: #ff3333 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  margin-left: 5px !important;
+  padding: 5px 10px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Delete button hover style */
+button.delete-button:hover {
+  background-color: #e60000 !important;
+}
+
+/* Edit button style */
+button.edit-button {
+  background-color: #77f4ee;
+  color: #000 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  margin-left: 5px !important;
+  padding: 5px 10px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Edit button hover style */
+button.edit-button:hover {
+  background-color: #b2d6e0;
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Spread items horizontally */
+  margin-bottom: 20px;
+  background-color: #0baedc; /* Background color for the navbar */
+  padding: 10px 20px; /* Add some padding to the navbar */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Navbar button styles */
+.navbar button {
+  background: none; /* Remove button background */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+/* Navbar button hover styles */
+.navbar button:hover {
+  color: #0056b3; /* Change text color on hover */
+}
